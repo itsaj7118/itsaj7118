@@ -1,4 +1,4 @@
-Nginx Ubuntu Installation
+Nginx  Ubuntu Installation
 Update Packages
 
 sudo apt-get update
