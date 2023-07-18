@@ -57,3 +57,13 @@ Reload Nginx
 
 nginx -s reload
 Visit localhost:8080 or localhost:80 and you should see Hello from Nginx Sever on browser.
+
+
+8. Add SSL with LetsEncrypt
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python3-certbot-nginx
+sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+
+# Only valid for 90 days, test the renewal process with
+certbot renew --dry-run
